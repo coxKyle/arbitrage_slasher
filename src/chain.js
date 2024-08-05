@@ -18,7 +18,7 @@ const alchemyApiKey = ''; //HhxVvFHxxxxxxxxxxxxxxxxxxxxxx
 
 var contractAddress = '0xD47bD12732e8ea7abd047c17Db585E57075a1339'; //with profit safety
 // var contractAddress = '0xE7c79825628Fa84cf7630A449F8628A5dc3c09Ce'; //without profit safety
-var provider = new ethers.providers.AlchemyProvider('matic', alchemyApiKey);
+var provider = new ethers.providers.JsonRpcProvider(alchemyApiKey);
 var wallet = new ethers.Wallet(privateKey, provider);
 var cSLASHER = new ethers.Contract(contractAddress, ISlasher, wallet);
 
