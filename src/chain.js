@@ -13,10 +13,10 @@ import BCSlasher from "../interfaces/BCSlasher.json";
 
 /* EDIT */
 const privateKey = '0x0123456789012345678901234567890123456789012345678901234567890123';
-const alchemyApiKey = ''; //HhxVvFHxxxxxxxxxxxxxxxxxxxxxx
+const alchemyApiKey = 'https://rpc.ankr.com/arbitrum'; //HhxVvFHxxxxxxxxxxxxxxxxxxxxxx
 /* EDIT */
 
-var contractAddress = '0xD47bD12732e8ea7abd047c17Db585E57075a1339'; //with profit safety
+var contractAddress = ''; //with profit safety
 // var contractAddress = '0xE7c79825628Fa84cf7630A449F8628A5dc3c09Ce'; //without profit safety
 var provider = new ethers.providers.JsonRpcProvider(alchemyApiKey);
 var wallet = new ethers.Wallet(privateKey, provider);
